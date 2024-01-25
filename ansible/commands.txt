@@ -1,0 +1,12 @@
+install_terraform = ansible-playbook terraform.yaml -e '@password.yml' --vault-password-file=vault.txt
+install_terraform = ansible-playbook terraform_role.yml -e '@password.yml' --vault-password-file=vault.txt
+
+sudo rm -rf /var/lib/dpkg/lock-frontend
+sudo rm -rf /var/lib/apt/lists/lock
+sudo rm -rf /var/cache/apt/archives/lock
+sudo rm -rf /var/lib/dpkg/lock
+sudo rm -rf /var/lib/apt/lists/*
+sudo apt-get clean
+sudo apt-get update
+ansible-playbook terraform_role.yml --vault-password-file=vault.txt --extra-vars '@password.yml'
+ansible-galaxy init generic
