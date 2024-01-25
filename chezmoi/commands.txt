@@ -1,0 +1,10 @@
+chezmoi cd
+chezmoi init
+chezmoi add ~/.bashrc
+chezmoi edit ~/.zshrc
+# To view the diff between ~/.local/share/chezmoi/dot_zshrc & ~/.zshrc
+chezmoi diff
+
+# To apply the changes to your original ~/.zshrc
+chezmoi -v apply
+chezmoi update -v   # to update the local dotfilees with git repo changes
