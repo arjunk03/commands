@@ -10,3 +10,5 @@ sudo apt-get clean
 sudo apt-get update
 ansible-playbook terraform_role.yml --vault-password-file=vault.txt --extra-vars '@password.yml'
 ansible-galaxy init generic
+ansible-playbook terraform_role.yml --vault-password-file=vault.txt --extra-vars '@password.yml' --start-at-task="install lazygit"
+
