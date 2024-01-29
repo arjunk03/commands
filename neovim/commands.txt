@@ -1,0 +1,14 @@
+space + ff - serach file
+space + fo - search files from buffers
+space + fb - search from opened files
+space + e - to get focus to tree file selecter
+space + n - show line numbers
+space + rn - relative line numbers
+a after selecting a folder - create file/folder
+c after selecting a file/folder - copy the file/folder
+p - paste the file into a folder
+shift + ins - copyt he text from system clipboard to command mode
+:vsp - split pane vertically
+:sp - split pane horizontally
+:w - save content to file
+space + x - close the pane
